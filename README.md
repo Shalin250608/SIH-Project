@@ -1,7 +1,7 @@
 # SIH-Project
 
                     SPARKLINE (SIH26092) - PROJECT README
-   AI-Driven Scheme Matching & Channel Partner Routing Platform for NSFDC
+   AI-Driven Scheme Matching and Channel Partner Routing Platform for NSFDC
 
 
 TABLE OF CONTENTS:
