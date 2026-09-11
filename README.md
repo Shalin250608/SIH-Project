@@ -50,7 +50,7 @@ HOW SPARKLINE SOLVES THIS:
    behind verified mobile authentication.
 
 
-2. HOW TO RUN THE WEBSITE (3 EASY METHODS)
+2. HOW TO RUN THE WEBSITE (2 EASY METHODS)
 
 
 
@@ -82,26 +82,6 @@ Use this method to run the live REST API and native SQLite persistent backend.
 5. All citizen applications and officer actions are synchronized in real time with 
    the SQLite database!
 
-
-METHOD 3: DEVELOPER SERVER (For Modifying Source Code & Live Reloading)
-
-Use this method to edit the React components and test with hot-reloading:
-
-1. Open PowerShell or Command Prompt in this folder:
-      cd "d:\Varun\Working website"
-2. Install dependencies (first time only):
-      npm install
-3. Start the Vite development server:
-      npm run dev
-4. Open the displayed local URL (typically http://localhost:5173).
-5. To compile new single-file distribution bundles after editing:
-      npm run build
-   This updates "dist/index.html" and "SparkLine_Website.html" automatically.
-
-
-3. BRIEF DESCRIPTION OF ALL FILES & FOLDERS
-
-
 ROOT DIRECTORY:
 
 SparkLine_Website.html   : The complete standalone production website. It contains all HTML, 
@@ -113,7 +93,6 @@ vite.config.js           : Vite configuration with single-file bundling plugin.
 tailwind.config.js       : Tailwind CSS utility configuration and civic color themes.
 postcss.config.cjs       : PostCSS styling preprocessor configuration.
 index.html               : Entry HTML template used by the Vite build tool.
-README.txt               : This user and developer documentation file.
 README_FOR_DEVELOPERS.txt: Detailed architectural breakdown and background guide.
 
 SRC/ DIRECTORY (FRONTEND CORE):
@@ -208,7 +187,6 @@ Enter these 16-character reference IDs in the "Track Application" tab:
 
 5. KEY FEATURES & TECHNICAL HIGHLIGHTS
 
-100% Client-Side Portability: Runs completely offline without an internet connection.
 Dual-Mode Architecture: Automatically syncs with SQLite when backend is online, 
   and seamlessly uses browser localStorage when offline.
 Responsive UI: Works on mobile phones, tablets, and desktop computers.
