@@ -57,7 +57,7 @@ HOW SPARKLINE SOLVES THIS:
 --------------------------------------------------------------------------------
 METHOD 1: 1-CLICK STANDALONE PORTABLE MODE (Zero Installation Required!)
 --------------------------------------------------------------------------------
-This is the fastest and easiest way to run SparkLine. No Node.js, no terminal, 
+This is the easiest way to run SparkLine. No Node.js, no terminal, 
 and no server setup needed!
 
 1. Open this folder in Windows File Explorer.
@@ -65,7 +65,7 @@ and no server setup needed!
       SparkLine_Website.html
    (Or double-click "Launch_SparkLine.bat")
 3. The website opens immediately in your default web browser (Chrome, Edge, Firefox).
-4. Everything works 100% offline, including local storage persistence, eligibility 
+4. Everything works 100% offline, including local storage, eligibility 
    evaluations, EMI calculations, dossier generation, and application tracking!
 
 --------------------------------------------------------------------------------
@@ -86,7 +86,7 @@ Use this method to run the live REST API and native SQLite persistent backend.
 --------------------------------------------------------------------------------
 METHOD 3: DEVELOPER SERVER (For Modifying Source Code & Live Reloading)
 --------------------------------------------------------------------------------
-If you want to edit the React components and test with hot-reloading:
+Use this method to edit the React components and test with hot-reloading:
 
 1. Open PowerShell or Command Prompt in this folder:
       cd "d:\Varun\Working website"
@@ -105,7 +105,7 @@ If you want to edit the React components and test with hot-reloading:
 
 ROOT DIRECTORY:
 --------------------------------------------------------------------------------
-• SparkLine_Website.html   : The complete standalone production website. All HTML, 
+• SparkLine_Website.html   : The complete standalone production website. It contains all HTML, 
                              CSS, JavaScript, and icons are bundled into this single file.
 • Launch_SparkLine.bat     : 1-click Windows batch script to launch the standalone website.
 • start_backend.bat        : 1-click Windows batch script to launch the Node.js backend server.
@@ -128,21 +128,21 @@ SRC/COMPONENTS/ (USER INTERFACE):
 --------------------------------------------------------------------------------
 • Navbar.jsx               : Sticky header with brand, navigation tabs, 3-language switcher 
                              (EN, हिन्दी, ગુજરાતી), user profile, and Admin Console trigger.
-• Hero.jsx                 : Clean civic homepage with CTA buttons, scheme overview, 4-step 
+• Hero.jsx                 : Civic homepage with CTA buttons, scheme overview, 4-step 
                              workflow diagram, and official government portal links.
 • EligibilityWizard.jsx    : 3-step questionnaire evaluating caste, purpose, district, 
                              project cost, and annual income.
-• RecommendationCard.jsx   : Displays matching schemes with "Best Match" badge, reasons, 
+• RecommendationCard.jsx   : Shows matching schemes with "Best Match" badge, reasons, 
                              document checklists, and structured ineligibility breakdowns.
-• FinancialCalculator.jsx  : Interactive loan amortization calculator with sliders for cost, 
+• FinancialCalculator.jsx  : Loan amortization calculator with sliders for cost, 
                              loan %, interest rate, tenure, and moratorium grace periods.
 • PartnerMap.jsx           : Geo-spatial Leaflet map locating Gujarat channel partners, 
                              calculating distance in km, and filtering high-NPA agencies.
-• ApplicationDossier.jsx   : Formal Government Loan Application Dossier modal with 
+• ApplicationDossier.jsx   : Government Loan Application Dossier modal with 
                              instant A4 "Print / Save as PDF" engine and portal submission.
 • ApplicationTracker.jsx   : Real-time 5-stage tracking portal with interactive "Live Status" 
                              badge, animated progress bar (20%-100%), and audit timeline.
-• AdminPanel.jsx           : Officer command center to review applications, advance stages, 
+• AdminPanel.jsx           : Officer panel to review applications, advance stages, 
                              manage partner status, and adjust NSFDC family income ceilings.
 • AuthModal.jsx            : Citizen login and registration dialog with password validation.
 • ChatAssistant.jsx        : Multilingual AI Scheme Assistant powered by Google Gemini 3.6 Flash 
@@ -151,14 +151,14 @@ SRC/COMPONENTS/ (USER INTERFACE):
 
 SRC/DATA/ (STATIC DATA STORES):
 --------------------------------------------------------------------------------
-• src/data/schemes.js      : Master dataset of NSFDC schemes (MFS, Term Loan, Udyam Nidhi, ELS).
+• src/data/schemes.js      : Main dataset of NSFDC schemes (MFS, Term Loan, Udyam Nidhi, ELS).
 • src/data/partners.js     : Authorized Gujarat Channel Partners (GSCDC, Lead Banks, RRBs).
 • src/data/translations.js : Multilingual dictionary covering English, Hindi, and Gujarati.
 
 SRC/UTILS/ (BUSINESS LOGIC & ENGINE):
 --------------------------------------------------------------------------------
 • src/utils/ruleEngine.js  : Deterministic scheme qualification logic and rejection breakdown.
-• src/utils/calculator.js  : Financial mathematics for EMI, simple interest, and promoter margin.
+• src/utils/calculator.js  : Financial calculations for EMI, simple interest, and promoter margin.
 • src/utils/api.js         : Dual-Mode API client with synchronous dual-write, automatic offline 
                              localStorage fallback, and fast 500ms health check timeouts.
 
@@ -177,7 +177,7 @@ BACKEND/ DIRECTORY (NODE.JS + SQLITE REST SERVER):
 DIST/ & FINAL/ DIRECTORIES:
 --------------------------------------------------------------------------------
 • dist/index.html          : Compiled single-file production bundle generated by Vite.
-• final/                   : Distribution folder containing the self-contained standalone 
+• final/                   : Distribution folder containing the standalone 
                              website and backup backend files.
 
 ================================================================================
@@ -211,12 +211,12 @@ Enter these 16-character reference IDs in the "Track Application" tab:
 ================================================================================
 5. KEY FEATURES & TECHNICAL HIGHLIGHTS
 ================================================================================
-• 100% Client-Side Portability: Runs completely offline without any internet connection.
+• 100% Client-Side Portability: Runs completely offline without an internet connection.
 • Dual-Mode Architecture: Automatically syncs with SQLite when backend is online, 
   and seamlessly uses browser localStorage when offline.
-• Responsive UI: Designed for mobile phones, tablets, and desktop computers.
+• Responsive UI: Works on mobile phones, tablets, and desktop computers.
 • Government Ready: Aligned with official NSFDC 2026 guidelines and Gujarat GSCDC norms.
-• Accessible & Transparent: Clear explanations for all eligibility decisions.
+• Accessible & Transparent: Provides clear explanations for all eligibility decisions.
 
 ================================================================================
             SparkLine SIH26092 • Empowering Marginalized Communities
